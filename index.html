@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簿記問題アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>簿記問題 💡</h1>
+        <p id="category-info">カテゴリ: </p>
+        
+        <div id="question-area">
+            <p id="question-number"></p>
+            <h2 id="question-text">データを読み込み中...</h2>
+        </div>
+        
+        <div id="choices-area">
+            <button class="choice-btn" id="choice-A" data-choice="A"></button>
+            <button class="choice-btn" id="choice-B" data-choice="B"></button>
+            <button class="choice-btn" id="choice-C" data-choice="C"></button>
+            <button class="choice-btn" id="choice-D" data-choice="D"></button>
+            <button class="choice-btn" id="choice-E" data-choice="E"></button>
+        </div>
+        
+        <div id="result-area">
+            <p id="result-text"></p>
+            <button id="next-button" style="display:none;">次の問題へ</button>
+            <button id="restart-button" style="display:none;">最初からやり直す</button>
+        </div>
+
+        <div id="explanation-area" style="display:none;">
+            <h3>解説</h3>
+            <p id="explanation-text"></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
