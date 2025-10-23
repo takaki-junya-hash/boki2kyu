@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#quiz-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+#question-area {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e6f7ff;
+  border-radius: 5px;
+}
+
+#question-text {
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* 選択肢ボタンのスタイル */
+.choice-btn {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.choice-btn:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.choice-btn:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* 正解・不正解時のボタン色 */
+.correct {
+  background-color: #e6ffed !important;
+  border-color: #4CAF50 !important;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.incorrect {
+  background-color: #ffe6e6 !important;
+  border-color: #F44336 !important;
+  color: #F44336;
+}
+
+#result-area {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+#next-button, #restart-button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#explanation-area {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px dashed #ccc;
+}
